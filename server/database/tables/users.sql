@@ -1,0 +1,12 @@
+use haxell_solutions;
+CREATE TABLE users (
+	id INT(12) NOT NULL AUTO_INCREMENT,
+	firstname VARCHAR(255) NOT NULL,
+	lastname VARCHAR(255) NOT NULL,
+	gender VARCHAR(15) NOT NULL,
+	email VARCHAR(255) NOT NULL,
+	password VARCHAR(15) NOT NULL,
+	created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY(id),
+	UNIQUE(email)
+);
